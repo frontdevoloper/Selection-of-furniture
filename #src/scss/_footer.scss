@@ -21,15 +21,15 @@ $greyBackColor: #f2f2f2;
     align-items: center;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 520px) {
+      margin: 0em 0em 2.5em 0em;
+    }
   }
 
   &__logo-img {
     margin: 0em 2.5em 0em 0em;
     @media (max-width: 640px) {
       margin: 0em 1.5rem 0 0em;
-    }
-    @media (max-width: 520px) {
-      margin: 0em 0em 2.5em 0em;
     }
   }
 
@@ -76,6 +76,7 @@ $greyBackColor: #f2f2f2;
     }
     @media (max-width: 520px) {
       display: block;
+      margin: 0;
     }
   }
 
