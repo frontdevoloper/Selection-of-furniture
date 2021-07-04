@@ -10,9 +10,6 @@ $whiteColor: "#fff";
 
 body {
   font-family: "Muller";
-  @media (max-width: 1220px) {
-    padding: 0 20px;
-  }
 }
 
 .wrapper {
@@ -24,6 +21,9 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1200px) {
+    padding: 0 20px;
+  }
   @media (max-width: 768px) {
     max-width: 730px;
   }

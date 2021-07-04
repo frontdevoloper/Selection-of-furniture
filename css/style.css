@@ -224,12 +224,6 @@ body {
   font-family: "Muller";
 }
 
-@media (max-width: 1220px) {
-  body {
-    padding: 0 20px;
-  }
-}
-
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,6 +238,12 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 768px) {
