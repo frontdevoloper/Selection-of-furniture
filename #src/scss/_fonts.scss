@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto&display=swap");
+
+@font-face {
+  font-family: "Muller";
+  src: url("../../fonts/Muller Regular.eot");
+  src: local("☺"), url("../fonts/Muller Regular.woff") format("woff"),
+    url("../fonts/Muller Regular.ttf") format("truetype"),
+    url("../fonts/Muller Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/Muller Medium.eot");
+  src: local("☺"), url("../fonts/Muller Medium.woff") format("woff"),
+    url("../fonts/Muller Medium.ttf") format("truetype"),
+    url("../fonts/Muller Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/Muller Bold.eot");
+  src: local("☺"), url("../fonts/Muller Bold.woff") format("woff"),
+    url("../fonts/Muller Bold.ttf") format("truetype"),
+    url("../fonts/Muller Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
