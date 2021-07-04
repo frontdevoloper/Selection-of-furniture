@@ -1,0 +1,92 @@
+$greyColor: #333;
+$blueColor: #2f80ed;
+$greyBackColor: #f2f2f2;
+
+.footer {
+  background-color: $greyBackColor;
+  padding: 2.5rem 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media (max-width: 520px) {
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo-img {
+    margin: 0em 2.5em 0em 0em;
+    @media (max-width: 640px) {
+      margin: 0em 1.5rem 0 0em;
+    }
+    @media (max-width: 520px) {
+      margin: 0em 0em 2.5em 0em;
+    }
+  }
+
+  &__logo-text {
+    color: $greyColor;
+    font-size: 0.875rem;
+    line-height: 1.25em;
+  }
+
+  &__inverse-communication {
+    align-items: center;
+    display: flex;
+    @media (max-width: 520px) {
+      flex-direction: column;
+    }
+  }
+
+  &__inverse-communication-phone {
+    color: $greyColor;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    @media (max-width: 640px) {
+      font-size: 1.125rem;
+    }
+    @media (max-width: 520px) {
+      margin: 0em 0em 1em 0em;
+    }
+  }
+
+  &__inverse-communication-btn {
+    border: 2px solid $blueColor;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    display: block;
+    padding: 0.625em 1.875em;
+    margin: 0em 0em 0em 1.875em;
+    font-size: 1rem;
+    a {
+      color: $blueColor;
+    }
+    @media (max-width: 890px) {
+      display: none;
+    }
+    @media (max-width: 520px) {
+      display: block;
+    }
+  }
+
+  &__inverse-communication-btn-mobile {
+    display: none;
+    @media (max-width: 890px) {
+      display: block;
+      margin: 0em 0em 0em 1.25em;
+    }
+    @media (max-width: 520px) {
+      display: none;
+    }
+  }
+}
