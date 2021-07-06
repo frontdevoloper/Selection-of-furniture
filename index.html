@@ -28,7 +28,7 @@
                 href="tel:+74956629253"
                 >+7 (495) 662-95-23</a
               >
-              <div class="header__inverse-communication-btn">
+              <div class="header__inverse-communication-btn btnCall">
                 <a href="#">Заказать обратный звонок</a>
               </div>
 
@@ -62,7 +62,7 @@
                 href="tel:+74956629253"
                 >+7 (495) 662-95-23</a
               >
-              <div class="footer__inverse-communication-btn">
+              <div class="footer__inverse-communication-btn btnCall">
                 <a href="#">Заказать обратный звонок</a>
               </div>
 
@@ -75,6 +75,56 @@
           </div>
         </div>
       </footer>
+    </div>
+
+    <!--Modal windwow-->
+    <div class="modal-window popup">
+      <div class="modal-window__wrapper">
+        <div class="modal-window__window">
+          <div class="modal-window__btn-close close">
+            <span class="close-icon"></span>
+          </div>
+          <div class="modal-window__content">
+            <p class="modal-window__text-info">
+              Оставьте ваши контактные данные и наш менеджер свяжется с вами в
+              течение 30 минут
+            </p>
+            <form class="modal-window__form">
+              <label class="modal-window__label" for="input-name"
+                >Введите ваше имя</label
+              >
+              <input
+                type="text"
+                class="modal-window__input-name"
+                id="input-name"
+                placeholder="Например Алексей"
+              />
+              <label class="modal-window__label" for="input-tel"
+                >Введите ваш телефон</label
+              >
+              <input
+                type="tel"
+                class="modal-window__input-tel"
+                id="input-tel"
+              />
+              <input
+                class="modal-window__btn"
+                type="submit"
+                value="Отправить"
+              />
+              <div class="modal-window__police">
+                Нажимая на кнопку, вы даёте согласие <br />
+                на обработку персональных данных <br />
+                и соглашаетесь
+                <a class="plice-link" href="#"
+                  >c политикой конфиденциальности</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="box close"></div>
     </div>
     <script src="js/script.js"></script>
   </body>

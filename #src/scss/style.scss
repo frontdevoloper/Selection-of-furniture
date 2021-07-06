@@ -2,11 +2,11 @@
 @import "_fonts";
 @import "_header";
 
-$blackColor: "#000";
-$greyColor: "#4f4";
-$blueColor: "#2F80ED";
-$yellowColor: "#2F80ED";
-$whiteColor: "#fff";
+$blackColor: #000;
+$greyColor: #4f4;
+$blueColor: #2f80ed;
+$yellowColor: #ffcf10;
+$whiteColor: #fff;
 
 body {
   font-family: "Muller";
@@ -37,3 +37,143 @@ body {
 }
 
 @import "_footer";
+
+.modal-window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__window {
+    position: relative;
+    padding: 65px 110px 50px 110px;
+    background: $whiteColor;
+    z-index: 5;
+  }
+
+  &__btn-close {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 10%;
+      width: 100%;
+      background: $blueColor;
+    }
+    &::before {
+      top: 50%;
+      transform: rotate(45deg) translate(0px, -50%);
+    }
+
+    &::after {
+      bottom: 50%;
+      transform: rotate(-45deg) translate(0px, 50%);
+    }
+  }
+
+  &__content {
+    max-width: 450px;
+  }
+
+  &__text-info {
+    font-size: 1.125rem;
+    text-align: center;
+    line-height: 1.575em;
+    max-width: 18.75em;
+    margin: 0 auto;
+  }
+
+  &__form {
+    padding: 40px 0px 0px 0px;
+  }
+
+  &__label {
+    font-size: 0.875rem;
+    line-height: 1.575em;
+    margin: 0px 0px 10px 0px;
+  }
+
+  &__input-name {
+    min-width: 100%;
+    display: block;
+    padding: 0.9375em 0 0.9375em 1.5em;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 10px 0px 20px 0px;
+  }
+
+  &__input-tel {
+    min-width: 100%;
+    display: block;
+    padding: 0.9375em 0 0.9375em 1.5em;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 10px 0px 60px 0px;
+  }
+
+  &__btn {
+    display: block;
+    background: $blueColor;
+    box-shadow: 4px 12px 40px rgba(9, 80, 172, 0.35);
+    border-radius: 8px;
+    min-width: 300px;
+    padding: 1.5625em 0;
+    color: $whiteColor;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: all 0.5s ease;
+  }
+
+  &__btn:hover {
+    background: rgb(9, 80, 173);
+  }
+
+  &__police {
+    font-size: 0.8125rem;
+    line-height: 140%;
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+  }
+}
+
+.modal-window._active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.close-icon {
+}
+.plice-link {
+  color: $blueColor;
+}
+
+.box {
+  background: rgba(0, 0, 0, 0.63);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
