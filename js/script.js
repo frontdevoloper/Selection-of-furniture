@@ -23,3 +23,11 @@ if (buttonsClose) {
     });
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const inputElement = document.getElementById("input-tel"); // ищем наш единственный input
+  const maskOptions = {
+    mask: "+{7}(000)000-00-00", // задаем единственный параметр mask
+  };
+  IMask(inputElement, maskOptions); // запускаем плагин с переданными параметрами
+});
