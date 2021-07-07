@@ -107,16 +107,8 @@
   }
 
   &__btn {
-    display: block;
-    background: $blueColor;
-    box-shadow: 4px 12px 40px rgba(9, 80, 172, 0.35);
-    border-radius: 8px;
-    min-width: 300px;
-    padding: 1.5625em 0;
-    color: $whiteColor;
-    cursor: pointer;
     margin: 0 auto;
-    transition: all 0.5s ease;
+    min-width: 300px;
   }
 
   &__btn:hover {
