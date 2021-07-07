@@ -225,6 +225,10 @@ body {
   font-family: "Muller";
 }
 
+body._block {
+  overflow: hidden;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -619,7 +623,7 @@ body {
 }
 
 .modal-window {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -634,7 +638,6 @@ body {
   visibility: hidden;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  overflow: hidden;
 }
 
 .modal-window__wrapper {

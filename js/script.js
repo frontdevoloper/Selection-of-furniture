@@ -6,6 +6,7 @@ if (buttonsCall) {
       const popupItems = document.querySelectorAll(".popup");
       popupItems.forEach((popupItem) => {
         popupItem.classList.toggle("_active");
+        document.body.classList.toggle("_block");
       });
     });
   });
@@ -20,6 +21,7 @@ if (buttonsClose) {
     const button = buttonsClose[index];
     button.addEventListener("click", () => {
       button.closest(".popup").classList.remove("_active");
+      document.body.classList.remove("_block");
     });
   }
 }
