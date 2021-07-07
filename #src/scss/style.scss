@@ -23,6 +23,45 @@ $fontPtSerif: "PT Serif", serif;
   transition: all 0.5s ease;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #000;
+  margin: 0px 0px 12px 0px;
+  @media (max-width: 520px) {
+    font-size: 1.75rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  line-height: 140%;
+  color: $grayColor;
+}
+
+.info-text {
+  background: $yellowColor;
+  display: flex;
+  padding: 28px 150px 28px 210px;
+  width: 100%;
+  border-radius: 12px;
+  @media (max-width: 767px) {
+    padding: 28px 50px 28px 90px;
+  }
+  @media (max-width: 520px) {
+    font-size: 1rem;
+    padding: 20px 15px 20px 15px;
+  }
+}
+
+.text {
+  font-size: 1.25rem;
+  line-height: 140%;
+  @media (max-width: 800px) {
+    font-size: 1rem;
+  }
+}
+
 body {
   font-family: "Muller";
   overflow-x: hidden;
@@ -264,45 +303,6 @@ body {
   & img {
     align-self: start;
     margin: 0px 30px 0px 0px;
-  }
-}
-
-.title {
-  font-weight: 700;
-  font-size: 3rem;
-  color: #000;
-  margin: 0px 0px 12px 0px;
-  @media (max-width: 520px) {
-    font-size: 1.75rem;
-  }
-}
-
-.subtitle {
-  font-size: 1.25rem;
-  line-height: 140%;
-  color: $grayColor;
-}
-
-.info-text {
-  background: $yellowColor;
-  display: flex;
-  padding: 28px 150px 28px 210px;
-  width: 100%;
-  border-radius: 12px;
-  @media (max-width: 767px) {
-    padding: 28px 50px 28px 90px;
-  }
-  @media (max-width: 520px) {
-    font-size: 1rem;
-    padding: 20px 15px 20px 15px;
-  }
-}
-
-.text {
-  font-size: 1.25rem;
-  line-height: 140%;
-  @media (max-width: 800px) {
-    font-size: 1rem;
   }
 }
 
