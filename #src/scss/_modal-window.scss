@@ -19,9 +19,12 @@
 
   &__window {
     position: relative;
-    padding: 65px 110px 50px 110px;
+    padding: 65px 115px 50px 115px;
     background: $whiteColor;
     z-index: 5;
+    @media (max-width: 475px) {
+      padding: 50px 10px 20px 20px;
+    }
   }
 
   &__btn-close {
@@ -31,6 +34,11 @@
     top: 20px;
     right: 30px;
     cursor: pointer;
+
+    @media (max-width: 475px) {
+      top: 10px;
+      right: 10px;
+    }
 
     &::before,
     &::after {
@@ -53,6 +61,9 @@
 
   &__content {
     max-width: 450px;
+    @media (min-width: 475px) {
+      max-width: 345px;
+    }
   }
 
   &__text-info {
@@ -65,6 +76,9 @@
 
   &__form {
     padding: 40px 0px 0px 0px;
+    @media (min-width: 475px) {
+      padding: 20px 0 0 0;
+    }
   }
 
   &__label {

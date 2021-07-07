@@ -651,9 +651,15 @@ body {
 
 .modal-window__window {
   position: relative;
-  padding: 65px 110px 50px 110px;
+  padding: 65px 115px 50px 115px;
   background: #fff;
   z-index: 5;
+}
+
+@media (max-width: 475px) {
+  .modal-window__window {
+    padding: 50px 10px 20px 20px;
+  }
 }
 
 .modal-window__btn-close {
@@ -663,6 +669,13 @@ body {
   top: 20px;
   right: 30px;
   cursor: pointer;
+}
+
+@media (max-width: 475px) {
+  .modal-window__btn-close {
+    top: 10px;
+    right: 10px;
+  }
 }
 
 .modal-window__btn-close::before, .modal-window__btn-close::after {
@@ -689,6 +702,12 @@ body {
   max-width: 450px;
 }
 
+@media (min-width: 475px) {
+  .modal-window__content {
+    max-width: 345px;
+  }
+}
+
 .modal-window__text-info {
   font-size: 1.125rem;
   text-align: center;
@@ -699,6 +718,12 @@ body {
 
 .modal-window__form {
   padding: 40px 0px 0px 0px;
+}
+
+@media (min-width: 475px) {
+  .modal-window__form {
+    padding: 20px 0 0 0;
+  }
 }
 
 .modal-window__label {
