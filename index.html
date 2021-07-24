@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Selection of furniture</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -28,9 +32,9 @@
                 href="tel:+74956629253"
                 >+7 (495) 662-95-23</a
               >
-              <div class="header__inverse-communication-btn btnCall">
-                <a href="#">Заказать обратный звонок</a>
-              </div>
+              <button data-goto="#popup-call" type="button" class="header__inverse-communication-btn btnCall" id="header__inverse-communication-btn">
+                Заказать обратный звонок
+              </button>
 
               <div class="header__inverse-communication-btn-mobile btnCall">
                 <a href="#">
@@ -216,7 +220,7 @@
               </div>
             </div>
             <div class="conditions__info-text info-text">
-              <img src="/img/icon/icon-info.svg" alt="infotmation" />
+              <img src="img/icon/icon-info.svg" alt="infotmation" />
               <p class="text">
                 Мы понимаем, что хорошие исполнители хотят получать достойную
                 оплату и уважительное отношение к себе и своему труду, по этому
@@ -273,10 +277,13 @@
                 <img src="img/Table.jpg" alt="New furniture specification" />
               </div>
             </div>
-            <div class="stages-work__info info-text">
-              Чем больше объектов вы укомплектовываете, тем больше вы
+            <div class="conditions__info-text info-text">
+              <img src="img/icon/icon-info.svg" alt="infotmation" />
+              <p style="padding-left: 20px;" class="text">
+                Чем больше объектов вы укомплектовываете, тем больше вы
               зарабатываете
-            </div>
+              </p>
+            </div>                   
           </div>
         </section>
         <section class="feedback">
@@ -288,10 +295,11 @@
             <div class="feedback__wrapper">
               <form action="#" class="feedback__form">
                 <div class="feedback__form-input">
-                  <label for="feedback__wrapper-input-name"
+                  <label for="feedback__wrapper__input-name"
                     >Введите ваше имя</label
                   >
                   <input
+                  placeholder="Например Алексей"
                     class="feedback__input-name input"
                     id="feedback__wrapper__input-name"
                   />
@@ -301,8 +309,8 @@
                   <label for="feedback__wrapper-input-tel"
                     >Введите ваш телефон</label
                   >
-                  <input
-                    class="feedback__input-tel input"
+                  <input placeholder="+7(___)___ - __ - __"
+                    class="feedback__input-tel input input-tel"
                     id="feedback__wrapper-input-tel"
                   />
                 </div>
@@ -322,6 +330,247 @@
                   </div>
                 </div>
               </form>
+            </div>
+          </div>
+        </section>
+        <!-- Slider main container -->
+        <section class="question">
+          <h2 class="question__title title">
+            Рассчитайте вашу будущую зарплату в Domeo
+          </h2>
+          <p class="question__subtitle subtitle">
+            ответьте на 2 ключевых вопроса по, которым мы определим вашу точную
+            зарплату
+          </p>
+          <div class="question-slider swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="question-slider__wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="question-slider__slide swiper-slide">
+                <div class="container">
+                  <form
+                    class="question-slider__content content-slider"
+                    action="#"
+                  >
+                    <h3 class="content-slider__title">
+                      Сколько объектов вы готовы укомплектовывать в месяц?
+                    </h3>
+                    <p class="content-slider__subtitle">
+                      в выбранной ранее специализации
+                    </p>
+                    <div class="content-slider__form form-slider">
+                      <div class="form-slider__wrapper">
+                        <div class="form-slider__input">
+                          <input
+                            value="1-5"
+                            name="question"
+                            class="form-slider__raiobutton"
+                            type="radio"
+                          />
+                          <p class="form-slider__label">1-5</p>
+                        </div>
+                        <div class="form-slider__input">
+                          <input
+                            value="5-10"
+                            name="question"
+                            class="form-slider__raiobutton"
+                            type="radio"
+                          />
+                          <p class="form-slider__label">5-10</p>
+                        </div>
+                        <div class="form-slider__input">
+                          <input
+                            value="более 10"
+                            name="question"
+                            class="form-slider__raiobutton"
+                            type="radio"
+                          />
+                          <p class="form-slider__label">Более 10</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="buttons">
+                      <button
+                        type="button"
+                        class="form-slider__button btn next"
+                      >
+                        Далее
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="question-slider__slide swiper-slide">
+                <div class="container">
+                  <form
+                    class="question-slider__content content-slider"
+                    action="#"
+                  >
+                    <h3 class="content-slider__title">
+                      Сколько у вас лет опыта?
+                    </h3>
+                    <p class="content-slider__subtitle">
+                      в комплектации мебели
+                    </p>
+                    <div class="content-slider__form form-slider">
+                      <div class="form-slider__wrapper">
+                        <div class="form-slider__input">
+                          <input
+                            value="1-5"
+                            name="question"
+                            class="form-slider__raiobutton"
+                            type="radio"
+                          />
+                          <p class="form-slider__label">До года</p>
+                        </div>
+                        <div class="form-slider__input">
+                          <input
+                            value="5-10"
+                            name="question"
+                            class="form-slider__raiobutton"
+                            type="radio"
+                          />
+                          <p class="form-slider__label">От 2 до 3 лет</p>
+                        </div>
+                        <div class="form-slider__input">
+                          <input
+                            value="более 10"
+                            name="question"
+                            class="form-slider__raiobutton"
+                            type="radio"
+                          />
+                          <p class="form-slider__label">От 3 и более</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="buttons">
+                      <button
+                        type="button"
+                        class="form-slider__button btn prev"
+                      >
+                        Назад
+                      </button>
+                      <button
+                        type="button"
+                        class="form-slider__button btn next"
+                      >
+                        Далее
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="question-slider__slide swiper-slide">
+                <div class="container">
+                  <form
+                    class="question-slider__content content-slider"
+                    action="#"
+                  >
+                    <h3 class="content-slider__title">
+                      Сколько объектов вы укомплектовали?
+                    </h3>
+                    <p class="content-slider__subtitle">
+                      в выбранной ранее специализации
+                    </p>
+                    <div class="content-slider__form form-slider">
+                      <div class="form-slider__wrapper">
+                        <div class="form-slider__input">
+                          <input
+                            value="1-5"
+                            name="question"
+                            class="form-slider__raiobutton"
+                            type="radio"
+                          />
+                          <p class="form-slider__label">От 1 - 10</p>
+                        </div>
+                        <div class="form-slider__input">
+                          <input
+                            value="5-10"
+                            name="question"
+                            class="form-slider__raiobutton"
+                            type="radio"
+                          />
+                          <p class="form-slider__label">От 10 - 50</p>
+                        </div>
+                        <div class="form-slider__input">
+                          <input
+                            value="более 10"
+                            name="question"
+                            class="form-slider__raiobutton"
+                            type="radio"
+                          />
+                          <p class="form-slider__label">Более 50</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="buttons">
+                      <button
+                        type="button"
+                        class="form-slider__button btn prev"
+                      >
+                        Назад
+                      </button>
+                      <button
+                        type="button"
+                        class="form-slider__button btn next"
+                      >
+                        Далее
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="question-slider__slide swiper-slide">
+                <div class="container">
+                  <form
+                    class="question-slider__content content-slider"
+                    action="#"
+                  >
+                    <h3 class="content-slider__title">
+                      Сколько объектов вы укомплектовали?
+                    </h3>
+                    <p class="content-slider__subtitle">
+                      в выбранной ранее специализации
+                    </p>
+                    <div class="content-slider__form-cal form-slider">
+                      <div class="form-slider__wrapper-call">
+                        <div class="form-slider__input-call">
+                          <label for="form-slider__name">Введите ваше имя</label>
+                          <input
+                            placeholder="Например, Алексей"
+                            name="question"
+                            id="form-slider__name"
+                            class="form-slider__name input"                           
+                          />                          
+                        </div>
+                        <div class="form-slider__input-call">
+                          <label for="form-slider__tel">Введите ваш телефон</label>
+                          <input
+                            placeholder="+7 (___) ___ - __ - __"
+                            name="question"
+                            id="form-slider__tel"
+                            class="form-slider__tel input input-tel"
+                            type="tel"
+                          />                          
+                        </div>
+                        
+                    </div>
+                    <div class="form-slider__buttons">
+                      <button type="submit" class="form-slider__submit btn">
+                        Рассчитать <br> заработную плату
+                      </button>
+                      <div class="form-slider__police police">
+                        Нажимая на кнопку, вы даёте согласие <br />
+                        на обработку персональных данных <br />
+                        и соглашаетесь
+                        <a class="plice-link" href="#"
+                          >c политикой конфиденциальности</a
+                        >
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -345,9 +594,9 @@
                 href="tel:+74956629253"
                 >+7 (495) 662-95-23</a
               >
-              <div class="footer__inverse-communication-btn btnCall">
-                <a href="#">Заказать обратный звонок</a>
-              </div>
+              <button data-goto="#popup-call" type="button" class="footer__inverse-communication-btn btnCall">
+                Заказать обратный звонок
+              </button>
 
               <div class="footer__inverse-communication-btn-mobile btnCall">
                 <a href="#">
@@ -361,7 +610,7 @@
     </div>
 
     <!--Modal windwow-->
-    <div class="modal-window popup">
+    <div class="modal-window popup" id="popup-call">
       <div class="modal-window__wrapper">
         <div class="modal-window__window">
           <div class="modal-window__btn-close close">
@@ -387,7 +636,7 @@
               >
               <input
                 type="tel"
-                class="modal-window__input-tel input"
+                class="modal-window__input-tel input input-tel"
                 id="input-tel"
                 placeholder="+7(___)___ - __ - __"
               />
@@ -409,8 +658,10 @@
         </div>
       </div>
       <div class="box close"></div>
-    </div>
+    </div>    
     <script src="js/imask.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
