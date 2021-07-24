@@ -3,11 +3,10 @@ const buttonsCall = document.querySelectorAll(".btnCall");
 if (buttonsCall) {
   buttonsCall.forEach((button) => {
     button.addEventListener("click", () => {
-      const popupItems = document.querySelectorAll(".popup");
-      popupItems.forEach((popupItem) => {
-        popupItem.classList.toggle("_active");
-        document.body.classList.toggle("_block");
-      });
+      //const popupItems = document.querySelectorAll(".popup");
+      const popupItem = document.querySelector(button.dataset.goto);
+      popupItem.classList.add("_active");
+      document.body.classList.add("_block");
     });
   });
 }
@@ -27,9 +26,13 @@ if (buttonsClose) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const inputElement = document.getElementById("input-tel"); // ищем наш единственный input
+  const inputsPhone = document.querySelectorAll(".input-tel");
   const maskOptions = {
-    mask: "+{7}(000)000-00-00", // задаем единственный параметр mask
+    mask: "+{7} (000) 000-00-00",
   };
-  IMask(inputElement, maskOptions); // запускаем плагин с переданными параметрами
+  // запускаем плагин с переданными параметрами
+  for (let index = 0; index < inputsPhone.length; index++) {
+    const input = inputsPhone[index];
+    IMask(input, maskOptions);
+  }
 });
